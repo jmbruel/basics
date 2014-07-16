@@ -3,3 +3,7 @@ script:
 - java -version
 - ls -alF
 - make *.png
+
+# if everything OK, then deploy on the web
+after_success: 
+- bash update.sh
