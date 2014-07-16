@@ -14,8 +14,11 @@ hide circle
 '-----------------------------------
 !define CANCEL Cancel
 !define CLIENTS Client
+!define COMPOSITE "State 1"
+!define CONFIG "State 3"
 !define EMPLOYE Employee
 !define EXTENDS << extends >>
+!define IDLE "State 2"
 !define INCLUDE << include >>
 !define LOGIN	Login
 !define NOM lastName
