@@ -1,0 +1,16 @@
+'-----------------------------------
+' UML concepts illustrated
+' JMB 2014
+'-----------------------------------
+@startuml
+' File where const and functions are defined:
+!include Defs.txt
+'-----------------------------------
+!define GROUP Group
+!define STUDENT Student
+
+class STUDENT
+class GROUP
+GROUP o-- STUDENT
+
+@enduml
