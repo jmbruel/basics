@@ -6,7 +6,7 @@ before_install:
  
 script:
 - ls -alF
-- make *.png
+- java -jar plantuml.jar *.txt
 
 # if everything OK, then deploy on the web
 after_success: 
