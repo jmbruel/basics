@@ -1,6 +1,8 @@
 basics
 ======
+:github: https://github.com[GitHub]
 :plantUML: http://plantuml.sourceforge.net/[plantUML]
+:travis: https://travis-ci.org[Travis]
 
 Basic UML concepts and diagrams in {plantUML} for easy modification/translation
 
@@ -20,12 +22,20 @@ To add a concept:
 make myNewFile.png
 ....
 +
+[NOTE]
+====
+If you don't have {plantUML}, you can simply add your +.txt+ file. {github} will
+generate the +.png+ file for you using {travis}. But you'll have to remove the
++-- [skip ci]+ comment in the commit message below. Note also that {travis} can be very
+slow.
+====
++
 . Add your name in the contributors' list (if not done already)
 . Share with others!
 +
 ....
 git add myNewFile.*
-git commit -am "myAwesomeMessage"
+git commit -am "myAwesomeMessage -- [skip ci]"
 git push
 ....
 
