@@ -1,0 +1,24 @@
+'-----------------------------------
+' UML concepts illustrated
+' Definitions file (to be included by !include Defs.txt)
+' JMB 2014
+'-----------------------------------
+@startuml
+
+' Attribute and name values (change for translation)
+
+!define CLIENTS Client
+!define NOM lastName
+!define PRENOM firstName
+!define SOLDE balance
+
+!define EMPLOYE Employee
+!define SALAIRE income
+
+!define PERSONNE Person
+
+' Usefull functions
+
+!define objet(nom,type) class "<u>nom : type"
+	
+@enduml

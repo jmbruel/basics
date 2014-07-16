@@ -1,0 +1,23 @@
+'-----------------------------------
+' UML concepts illustrated
+' JMB 2014
+'-----------------------------------
+@startuml
+' File where const and funcitons are defined:
+!include Defs.txt
+'-----------------------------------
+
+' CLIENTS does not work :-(
+objet(jmb,Client) { 		
+NOM = "Bruel"
+PRENOM = "JM"
+SOLDE = "10.000.000"
+}
+
+'-----------------------------------
+' Hiding section
+'-----------------------------------
+hide circle
+hide methods
+'-----------------------------------
+@enduml
