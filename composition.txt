@@ -9,8 +9,8 @@
 !define GROUP Group
 !define STUDENT Student
 
-class STUDENT
 class GROUP
+class STUDENT
 GROUP o-- STUDENT
 
 @enduml
