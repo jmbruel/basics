@@ -7,11 +7,12 @@
 
 ' Default settings
 '-----------------------------------
-left to right direction
+' left to right direction 'does not work for sequence diagrams :-(
 hide circle
 
 ' Attribute and name values (change for translation)
 '-----------------------------------
+!define ACTOR ":Actor"
 !define CANCEL Cancel
 !define CLIENTS Client
 !define COMPOSITE "State 1"
@@ -20,12 +21,15 @@ hide circle
 !define EXTENDS << extends >>
 !define IDLE "State 2"
 !define INCLUDE << include >>
+!define INIT init
 !define LOGIN	Login
+!define MESSAGE message
 !define NOM lastName
 !define PERSONNE Person
 !define PRENOM firstName
 !define SALAIRE income
 !define SOLDE balance
+!define SYSTEM ":System"
 !define UPDATE	Update
 
 ' Usefull functions
