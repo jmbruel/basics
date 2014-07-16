@@ -5,20 +5,28 @@
 '-----------------------------------
 @startuml
 
+' Default settings
+'-----------------------------------
+left to right direction
+hide circle
+
 ' Attribute and name values (change for translation)
-
+'-----------------------------------
+!define CANCEL Cancel
 !define CLIENTS Client
-!define NOM lastName
-!define PRENOM firstName
-!define SOLDE balance
-
 !define EMPLOYE Employee
-!define SALAIRE income
-
+!define EXTENDS << extends >>
+!define INCLUDE << include >>
+!define LOGIN	Login
+!define NOM lastName
 !define PERSONNE Person
+!define PRENOM firstName
+!define SALAIRE income
+!define SOLDE balance
+!define UPDATE	Update
 
 ' Usefull functions
-
+'-----------------------------------
 !define objet(nom,type) class "<u>nom : type"
 	
 @enduml
