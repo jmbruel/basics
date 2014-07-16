@@ -1,0 +1,5 @@
+language: java
+script:
+- java -version
+- ls -alF
+- make *.png
