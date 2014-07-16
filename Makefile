@@ -2,7 +2,7 @@
 EXT=txt
 MAIN=*.$(EXT)
 #------------- Make sure to adapt the next line to your context
-PLANTUMLDIR=/Users/bruel/dev/outils/plantuml.jar
+PLANTUMLDIR=plantuml.jar
 PLANTUML=java -jar $(PLANTUMLDIR)
 OUTPUT=.
 IMG=png
