@@ -6,7 +6,7 @@ before_install:
  
 script:
 - ls -alF
-- java -jar plantuml.jar *.txt
+- java -jar plantuml.jar composition.txt
 
 # if everything OK, then deploy on the web
 after_success: 
