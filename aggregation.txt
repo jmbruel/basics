@@ -3,24 +3,11 @@
 ' JMB 2014
 '-----------------------------------
 @startuml
-' File where const and funcitons are defined:
+' File where const and functions are defined:
 !include Defs.txt
 '-----------------------------------
+left to right direction
 
-class PERSONNE {
-	NOM
-	PRENOM
-}
-
-class CLIENTS {
-	SOLDE
-}
-
-class EMPLOYE {
-	SALAIRE
-}
-
-PERSONNE <|--- CLIENTS
-PERSONNE <|--- EMPLOYE
+GROUP o-- STUDENT
 
 @enduml

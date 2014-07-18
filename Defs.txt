@@ -9,6 +9,8 @@
 '-----------------------------------
 ' left to right direction 'does not work for sequence diagrams :-(
 hide circle
+hide empty members
+hide methods
 
 ' Attribute and name values (for translation purpose). Add anything you need, but don't modify!
 '-----------------------------------
@@ -16,9 +18,11 @@ hide circle
 !define CANCEL Cancel
 !define CLIENTS Client
 !define COMPOSITE "State 1"
+!define COMPUTER Computer
 !define CONFIG "State 3"
 !define EMPLOYE Employee
 !define EXTENDS << extends >>
+!define GROUP Group
 !define IDLE "State 2"
 !define INCLUDE << include >>
 !define INIT init
@@ -26,9 +30,11 @@ hide circle
 !define MESSAGE message
 !define NOM lastName
 !define PERSONNE Person
+!define PROCESSOR Processor
 !define PRENOM firstName
 !define SALAIRE income
 !define SOLDE balance
+!define STUDENT Student
 !define SYSTEM ":System"
 !define UPDATE	Update
 

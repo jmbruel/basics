@@ -6,11 +6,8 @@
 ' File where const and functions are defined:
 !include Defs.txt
 '-----------------------------------
-!define GROUP Group
-!define STUDENT Student
+left to right direction
 
-class STUDENT
-class GROUP
-GROUP o-- STUDENT
+COMPUTER *-- PROCESSOR
 
 @enduml
