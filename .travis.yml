@@ -15,10 +15,10 @@ after_success:
 - echo -e "Starting to update gitHub\n"
 - git config --global user.email "jbruel#travis@gmail.com"
 - git config --global user.name "Jean-Michel Bruel"
-#git config --global push.default simple
+- git config --global push.default simple
 
 #using token clone io pages branch
-#git clone --quiet https://github.com/jmbruel/basics.git travis > /dev/null
+git clone --quiet https://github.com/jmbruel/basics.git
 
 #go into directory and copy data we're interested in to that directory
 #cd travis
