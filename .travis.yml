@@ -18,7 +18,7 @@ after_success:
 - git config --global push.default simple
 
 #using token clone io pages branch
-- git clone --quiet https://github.com/jmbruel/basics.git
+- git remote set-url origin https://github.com/jmbruel/basics.git
 
 #go into directory and copy data we're interested in to that directory
 #cd travis
