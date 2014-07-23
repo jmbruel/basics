@@ -27,12 +27,11 @@ after_success:
 - git clone --quiet https://${GH_TOKEN}@github.com/jmbruel/basics.git travis > /dev/null
 
 #go into directory and copy data we're interested in to that directory
-- pwd
+#- pwd
 #/home/travis/build/jmbruel/basics/
 - cp output/*.png travis/output
-- ls -al travis/output
+#- ls -al travis/output
 - cd travis/output
-#- git remote set-url origin https://${GH_TOKEN}@github.com/jmbruel/basics.git
 - git add *.png
 - git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to basics repository -- [skip ci]"
 - git push -fq origin master  > /dev/null
