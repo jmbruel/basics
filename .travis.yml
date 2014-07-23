@@ -4,7 +4,7 @@ before_install:
 - sudo apt-get install -qq graphviz
 script:
 - ls -alF
-- java -jar plantuml.jar composition.txt
+- java -jar plantuml.jar *.asciidoc -o output
 - ls -alF
 
 # if everything OK, then deploy on the web
@@ -15,7 +15,8 @@ after_success:
 - git config --global user.name "Jean-Michel Bruel"
 - git config --global push.default simple
 - git remote set-url origin https://${GH_TOKEN}@github.com/jmbruel/basics.git
-- git commit -am "Travis build $TRAVIS_BUILD_NUMBER pushed to basics repository -- [skip ci]"
+- git add output/*.png
+- git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to basics repository -- [skip ci]"
 - git push -fq origin master
 - echo -e "Done magic with output\n"
 

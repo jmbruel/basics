@@ -15,16 +15,16 @@ All the +.txt+ files are written using {plantUML} textual notation.
 
 To add a concept:
 
-. Add a new +.txt+ file (take example on an existing one such as link:class.txt[])
+. Add a new +.plantuml+ file (take example on an existing one such as link:class.plantuml[])
 . Generate the corresponding +.png+ file (you can use the proposed link:Makefile[])
 +
 ....
-make myNewFile.png
+make outpout/myNewFile.png
 ....
 +
 [NOTE]
 ====
-If you don't have {plantUML}, you can simply add your +.txt+ file. {github} will
+If you don't have {plantUML}, you can simply add your +.plantuml+ file. {github} will
 generate the +.png+ file for you using {travis}. But you'll have to remove the
 +-- [skip ci]+ comment in the commit message below. Note also that {travis} can be very
 slow.
@@ -34,7 +34,7 @@ slow.
 . Share with others!
 +
 ....
-git add myNewFile.*
+git add myNewFile.plantuml output/myNewFile.png
 git commit -am "myAwesomeMessage -- [skip ci]"
 git push
 ....

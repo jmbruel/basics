@@ -14,9 +14,13 @@ hide methods
 
 ' Attribute and name values (for translation purpose). Add anything you need, but don't modify!
 '-----------------------------------
+!define ABSTRACTION <<abstraction>>
 !define ACTOR ":Actor"
+!define ARRAYLIST ArrayList
 !define CANCEL Cancel
+!define CAR Car
 !define CLIENTS Client
+!define COLLECTION Collection
 !define COMPOSITE "State 1"
 !define COMPUTER Computer
 !define CONFIG "State 3"
@@ -29,6 +33,7 @@ hide methods
 !define LOGIN	Login
 !define MESSAGE message
 !define NOM lastName
+!define OWNS owns
 !define PERSONNE Person
 !define PROCESSOR Processor
 !define PRENOM firstName
