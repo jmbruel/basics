@@ -27,10 +27,10 @@ after_success:
 - git clone --quiet https://${GH_TOKEN}@github.com/jmbruel/basics.git travis > /dev/null
 
 #go into directory and copy data we're interested in to that directory
-- cd 
-- cd jmbruel/travis/output
+- ll /home
+- cd output
 - pwd
-- cp jmbruel/basics/output/*.png .
+- cp /home/jmbruel/basics/output/*.png .
 - ls -al 
 #- git remote set-url origin https://${GH_TOKEN}@github.com/jmbruel/basics.git
 - git add *.png
