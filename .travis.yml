@@ -4,7 +4,7 @@ before_install:
 - sudo apt-get install -qq graphviz
 script:
 - ls -alF
-- java -jar plantuml.jar *.asciidoc -o output
+- java -jar plantuml.jar *.plantuml -o output
 - ls -alF
 
 # if everything OK, then deploy on the web
