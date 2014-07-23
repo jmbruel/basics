@@ -1,0 +1,26 @@
+'-----------------------------------
+' UML concepts illustrated
+' JMB 2014
+'-----------------------------------
+@startuml
+' File where const and funcitons are defined:
+!include Defs.txt
+'-----------------------------------
+
+class PERSONNE {
+	NOM
+	PRENOM
+}
+
+class CLIENTS {
+	SOLDE
+}
+
+class EMPLOYE {
+	SALAIRE
+}
+
+PERSONNE <|--- CLIENTS
+PERSONNE <|--- EMPLOYE
+
+@enduml

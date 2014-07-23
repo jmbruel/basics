@@ -1,0 +1,14 @@
+'-----------------------------------
+' UML concepts illustrated
+' JMB 2014
+'-----------------------------------
+@startuml
+' File where const and funcitons are defined:
+!include Defs.txt
+'-----------------------------------
+
+CLIENTS --> (UPDATE)
+(UPDATE) ..> (LOGIN) : INCLUDE
+(CANCEL) .> (UPDATE) : EXTENDS
+
+@enduml
