@@ -7,7 +7,7 @@ basics
 
 Basic UML concepts and diagrams in {plantUML} for easy modification/translation.
 
-Last CI status: https://travis-ci.org/jmbruel/basics.svg?branch=master["Build Status", link="https://travis-ci.org/jmbruel/sysmlpapyrusbook"]
+Last CI status: image:https://travis-ci.org/jmbruel/basics.svg?branch=master["Build Status", link="https://travis-ci.org/jmbruel/sysmlpapyrusbook"]
 (Fork me on https://github.com/jmbruel/basics[icon:github[] GitHub])
 
 
