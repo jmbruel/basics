@@ -3,6 +3,7 @@ basics
 :github: https://github.com[GitHub]
 :plantUML: http://plantuml.sourceforge.net/[plantUML]
 :travis: https://travis-ci.org[Travis]
+:icons: font
 
 Basic UML concepts and diagrams in {plantUML} for easy modification/translation
 
@@ -10,24 +11,26 @@ Basic UML concepts and diagrams in {plantUML} for easy modification/translation
 
 [NOTE]
 ====
-All the +.txt+ files are written using {plantUML} textual notation.
+All the +.plantuml+ files are simple text files written using {plantUML} textual notation.
 ====
 
 To add a concept:
 
 . Add a new +.plantuml+ file (take example on an existing one such as link:class.plantuml[])
-. Generate the corresponding +.png+ file (you can use the proposed link:Makefile[])
+. Generate the corresponding +.svg+ or +.png+ file (you can use the proposed link:Makefile[]
+by simply launching `make build` or the following command)
 +
 ....
-make outpout/myNewFile.png
+make outpout/myNewFile.svg
 ....
 +
 [NOTE]
 ====
 If you don't have {plantUML}, you can simply add your +.plantuml+ file. {github} will
 generate the +.png+ file for you using {travis}. But you'll have to remove the
-+-- [skip ci]+ comment in the commit message below. Note also that {travis} can be very
-slow.
++-- [skip ci]+ comment in the commit message below.
+
+Note also that {travis} can be very slow.
 ====
 +
 . Add your name in the contributors' list (if not done already)
