@@ -3,11 +3,34 @@ basics
 :github: https://github.com[GitHub]
 :plantUML: http://plantuml.sourceforge.net/[plantUML]
 :travis: https://travis-ci.org[Travis]
-:icons: font
+:uri-ci-travis: https://travis-ci.org/jmbruel/basics
+// Thanks Dan Alen for the following
+ifndef::env-github[:icons: font]
+ifdef::env-github,env-browser[]
+:toc: macro
+:toclevels: 1
+endif::[]
+ifdef::env-github[]
+:branch: master
+:status:
+:outfilesuffix: .adoc
+:!toc-title:
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+ifndef::icons[:conum-guard: {sp}#{sp}]
+
+ifdef::status[]
+image:https://img.shields.io/badge/license-MIT-blue.svg[MIT License, link=#copyright-and-license]
+image:https://img.shields.io/travis/jmbruel/basics/master.svg[Build Status (Travis CI), link={uri-ci-travis}]
+endif::[]
 
 Basic UML concepts and diagrams in {plantUML} for easy modification/translation.
 
-Last CI status: image:https://travis-ci.org/jmbruel/basics.svg?branch=master["Build Status", link="https://travis-ci.org/jmbruel/sysmlpapyrusbook"]
+Last CI status: image:https://travis-ci.org/jmbruel/basics.svg?branch=master["Build Status (Travis CI)", link={uri-ci-travis}"]
 (Fork me on https://github.com/jmbruel/basics[icon:github[] GitHub])
 
 
@@ -49,3 +72,9 @@ git push
 == Contributors
 
 - mailto:jbruel@gmail.com[J.-M. Bruel] (U. of Toulouse)
+
+== Copyright and License
+
+Copyright (C) 2014-2017 Jean-Michel Bruel.
+Free use of this software is granted under the terms of the MIT License.
+See <<LICENSE#,LICENSE>> for details.
