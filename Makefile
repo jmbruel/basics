@@ -5,19 +5,19 @@ MAIN=*.$(EXT)
 PLANTUMLDIR=plantuml.jar
 PLANTUML=java -jar $(PLANTUMLDIR)
 OUTPUT=output
-IMG=png
+IMG=svg
 DEF=Defs
 #-----------------------------------------------------
 
-all: $(OUTPUT)/*.$(IMG) 
+all: $(OUTPUT)/*.$(IMG)
 
 $(OUTPUT)/%.$(IMG): %.$(EXT) $(DEF).$(EXT)
 	@echo '==> Compiling plantUML files to generate' $(IMG)
-	$(PLANTUML) $< -o $(OUTPUT)
+	$(PLANTUML) -t$(IMG) $< -o $(OUTPUT)
 	touch README.asciidoc
 
 build: FORCE
 	@echo '==> Compiling plantUML files to generate' $(IMG)
-	$(PLANTUML) *.$(EXT) -o $(OUTPUT)
+	$(PLANTUML) *.$(EXT) -t$(IMG) -o $(OUTPUT)
 
 FORCE:

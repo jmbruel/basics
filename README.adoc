@@ -1,0 +1,51 @@
+basics
+======
+:github: https://github.com[GitHub]
+:plantUML: http://plantuml.sourceforge.net/[plantUML]
+:travis: https://travis-ci.org[Travis]
+:icons: font
+
+Basic UML concepts and diagrams in {plantUML} for easy modification/translation.
+
+Last CI status: https://travis-ci.org/jmbruel/basics.svg?branch=master["Build Status", link="https://travis-ci.org/jmbruel/sysmlpapyrusbook"]
+(Fork me on https://github.com/jmbruel/basics[icon:github[] GitHub])
+
+
+== How To
+
+[NOTE]
+====
+All the +.plantuml+ files are simple text files written using {plantUML} textual notation.
+====
+
+To add a concept:
+
+. Add a new +.plantuml+ file (take example on an existing one such as link:class.plantuml[])
+. Generate the corresponding +.svg+ or +.png+ file (you can use the proposed link:Makefile[]
+by simply launching `make build` or the following command)
++
+....
+make outpout/myNewFile.svg
+....
++
+[NOTE]
+====
+If you don't have {plantUML}, you can simply add your +.plantuml+ file. {github} will
+generate the +.png+ file for you using {travis}. But you'll have to remove the
++-- [skip ci]+ comment in the commit message below.
+
+Note also that {travis} can be very slow.
+====
++
+. Add your name in the contributors' list (if not done already)
+. Share with others!
++
+....
+git add myNewFile.plantuml output/myNewFile.png
+git commit -am "myAwesomeMessage -- [skip ci]"
+git push
+....
+
+== Contributors
+
+- mailto:jbruel@gmail.com[J.-M. Bruel] (U. of Toulouse)
